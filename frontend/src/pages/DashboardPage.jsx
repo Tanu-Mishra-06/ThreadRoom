@@ -6,7 +6,7 @@ import CreatePostModal from "../components/CreatePostModal";
 import PostDetailModal from "../components/PostDetailModal";
 import dashboardBg from "../assets/dashboard-bg.png";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
 
 function DashboardPage() {
   const navigate = useNavigate();

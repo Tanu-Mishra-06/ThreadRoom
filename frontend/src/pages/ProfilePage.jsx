@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function ProfilePage() {
   const navigate = useNavigate();
-  const API_BASE = "http://localhost:5000/api";
+  const API_BASE = `${import.meta.env.VITE_API_URL}/api`;
 
   const user = JSON.parse(localStorage.getItem("user"));
   const token = localStorage.getItem("token");
